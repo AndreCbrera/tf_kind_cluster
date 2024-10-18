@@ -1,0 +1,11 @@
+controller:
+  ingressClassResource:
+    default: true
+    name: ${ingressClassName}
+  replicaCount: ${replicas}
+  ingressClass: non-existing
+  admissionWebhooks:
+    enabled: false
+  hostNetwork: true
+  service:
+    type: NodePort
